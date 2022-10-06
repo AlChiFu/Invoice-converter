@@ -11,7 +11,7 @@ with open("sample.xml") as mex_inv:
     mex_json.close()
 mex_inv.close()
 
-with open("sample2.xml") as mex_inv2:
+with open("sample2.xml", encoding="utf8") as mex_inv2:
     obj2 = xmltodict.parse(mex_inv2.read())
     data2 = json.dumps(obj2, indent=4)
 
